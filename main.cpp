@@ -1,23 +1,67 @@
 #include <iostream>
-
 using namespace std;
 
-int main()
-{
-  int a,b;
+int main() {
 
- char op= '+,*,/,-';
- cin >>a>>op>>b;
-  if(op == '+' )
-  {
+int target;
+cout <<"enter the target:";
+cin >>target;
+int arr[7];
+for(int i=0 ;i<7;i++){
 
-      cout <<a+b;
-  }
-else if(op == '-'){
-    cout<<a-b;}
-    else if(op == '*'){
-        cout<<a*b;
+
+    cin>>arr[i];}
+    for(int i=0 ;i<7;i++){
+    for (int j=i+1;j<7;j++){
+       if (arr[i]+arr[j]==target) {
+        cout<<arr[i]<<" + "<<arr[j]<<"="<<target<<endl;}
+       }
     }
-    else if (op =='/'){
-        cout<<a/b;}
+
+
+
+
+
+
+
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
